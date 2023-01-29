@@ -1,0 +1,415 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+
+}
+.main-conatiner{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: url(/BG/Group\ 1.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.main-conatiner .header{
+display: flex;
+height: 80px;
+width: 100%;
+padding: 0 40px;
+margin: 20px 0;
+justify-content: space-between;
+}
+.header .logo-box{
+display: flex;
+height: 100%;
+width: 40%;
+align-items: center;
+justify-content: left;
+}
+.header .logo-box .logo{
+    display: flex;
+    height: 70%;
+    width: 80px;
+    padding-left: 3rem;
+}
+
+.header .Nav-container{
+display: flex;
+flex-direction: column;
+height: 100%;
+width: 50%;
+align-items: flex-end;
+/* justify-content: space-between; */
+
+}
+.Nav-container .nav-bar{
+    display: flex;
+    height: 95%;
+    width: 100%;
+}
+.nav-bar .fa-bars{
+    display: none;
+}
+.nav-bar ul{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+    text-transform: uppercase;
+}
+.nav-bar ul li{
+    display: flex;
+    height: 80%;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.nav-bar ul li a{
+    display: flex;
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+
+}
+ .nav-bar ul li a:hover{
+
+    padding: 5px 10px;
+    
+    background: white;
+transition: 0.3s;
+    border-radius: 8px;
+}
+
+/* hero */
+.main-conatiner .header-mid-contant{
+    display: flex;
+    height: auto;
+    width: 100%;
+    padding: 40px 0px;
+    
+}
+.main-conatiner .header-mid-contant .details{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+
+}
+.main-conatiner .header-mid-contant .details h2{
+    display: flex;
+    margin: 8px 0;
+    font-size: 25px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.header-mid-contant .details h1{
+    display:flex ;
+    margin: 8px 0;
+    color: gray;
+    font-size: 55px;
+    letter-spacing: 2px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cabin Sketch', cursive;
+}
+.header-mid-contant .details h5{
+    display: flex;
+    font-size: 18px;
+    letter-spacing: 2.5px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.header-mid-contant.details .line{
+    display: flex;
+    height: 1px;
+    width: 300px;
+    margin: 8px 0;
+    background:rgba(136, 134, 134, 0.6);
+}
+.header-mid-contant .details .offer-box{
+    display: flex;
+    width: 200px;
+    height: 40px;
+    align-items: center;
+    justify-content:space-around;
+    
+}
+.header-mid-contant .details .offer-box .left-part{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: auto;
+}
+.header-mid-contant .details .offer-box .left-part span{
+    display: flex;
+    font-size: 15px;
+    color: gray;
+    font-family: 'Cabin Sketch', cursive;
+}
+.header-mid-contant .details .offer-box .right-part{
+    display: flex;
+    height: 100%;
+    width: auto;
+    font-size: 35px;
+    align-items: center;
+    justify-content:space-around;
+    color: grey;
+    font-family: 'Cabin Sketch', cursive;}
+.header-mid-contant .order{
+    display: flex;
+    height: 40px;
+    width: 150px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: rgb(30, 29, 29);
+    border-radius: 10px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    background: rgba(245, 241, 241, 0.582);
+    transition: 1s;
+    
+
+}
+.header-mid-contant .order:hover{
+    background: white;
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+    border: none;
+}
+.header-mid-contant .plate-img{
+    display: flex;
+    width: 50%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+.header-mid-contant .plate-img img{
+    display: flex;
+    height: 98%;
+    width: 85%;
+    transition: 1s;
+}
+.header-mid-contant .plate-img img:hover{
+transform: scale(1.1);
+}
+
+/* carousel  */
+.carousel-section{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding:60px;
+    justify-content: center;
+}
+.carousel-section h6{
+    display: flex;
+    width: 100%;
+    height: auto;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+}
+.carousel-section h1{
+    display: flex;
+    width: 100%;
+    height: auto;
+    font-size: 45px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    color: gray;
+}
+.carousel-section .description{
+    display: flex;
+    font-size: 15px;
+    width: 85%;
+    line-height: 23px;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    margin-left:62px;
+
+}
+.carousel{
+    
+    width: 40%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 30%;
+    margin-top: 20px;
+
+}
+@media (max-width:480px){
+
+    .main-conatiner{
+        height: auto;
+        width: 100%;
+    }
+    .main-conatiner .header{
+    padding: 0 11px;
+    margin: 11px 0;
+
+    }
+    .header .logo-box{
+    display: flex;
+    width: 60%;
+    }
+    .header .logo-box .logo{
+        height: 60%;
+        width: 65px;
+    }
+    
+    .header .Nav-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: flex-end;
+    
+    
+    }
+    .Nav-container .nav-bar{
+        display: flex;
+        height: 100%;
+        width: 30%;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-bar .fa-bars{
+        display: flex;
+        height: 38px;
+        width: 38px;
+        cursor: pointer;
+
+    }
+    .nav-bar ul{
+        display:none;
+    }
+    .nav-bar ul:hover{
+        right: 0px;
+        display: flex;
+        position: absolute;
+        height: 70px;
+        width: 100%;
+        padding: 0 10px;
+        margin-top: 100px;
+    
+    }
+    
+    .main-conatiner .header-mid-contant{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        
+    }
+    .main-conatiner .header-mid-contant .details{
+        height: 50%;
+        width: 100%;
+        align-items: center;
+        padding-top: 30px;
+    
+    }
+    .main-conatiner .header-mid-contant .details h2{
+        font-size: 24px;
+    
+    }
+
+    .header-mid-contant .details h5{
+        font-size: 10px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .header-mid-contant .details .offer-box{
+        margin-top: 10px;
+        
+    }
+    .header-mid-contant .plate-img{
+        display: flex;
+        width: 100%;
+        height: 50%;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-mid-contant .plate-img img{
+        display: flex;
+        height: 71%;
+        width: 71%;
+    }
+    .header-mid-contant .plate-img img:hover{
+    transform: scale(1.1);
+    }
+    
+    /* carousel  */
+    .carousel-section{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding:60px;
+        justify-content: center;
+    }
+    .carousel-section h6{
+        font-size: 20px;
+    }
+    .carousel-section h1{
+display: flex;
+        font-size: 25px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin:15px 0;
+        color: gray;
+        
+    }
+    .carousel-section .description{
+        
+        font-size: 13px;
+        width: 62%;
+        height: auto;
+        line-height:20px;
+    
+
+    
+    }
+    .carousel{
+        
+        width: 85%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 30%;
+        margin: 30px 0;
+    
+    }
+
+    
+    
+
+}
+
